@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0"> 
+    <meta name="description" content="Bigjara HTML is a complete guide on HTML">
+    <meta name="keywords" content="HTML , Web pages  , markup , HTML5 , elements , tags , attributes">
+    <title> Bigjara HTML :Forms </title>
+</head>
+<body>
+    <h1>Web Forms</h1>
+    <!--Working With Forms -->
+    <form class="" action="" method="POST" name="form-with-fieldset">
+        <h2>Bank Opening Application Form</h2>
+        <fieldset>
+              
+            <legend>Personal Data</legend>
+            <label for="First Name">First Name</label>
+            <input type="text" placeholder="First Name" required>
+        </fieldset>
+   </form>
+    <form class="" action="" method="POST"  enctype="multipart/form-data">
+        <h2>BVN Application Form</h2>
+        <label for="First Name">First Name</label>
+        <input type="text" placeholder="First Name" required>
+        <label for="Last Name">Last Name</label>
+        <input type="text" name="lastname">
+        <label for="email">Email</label>
+        <input type="email" name="email"  required>
+        <label for="date of birth">Date of Birth</label>
+        <input type="date" class="input input-border-faint" id="dob">
+        <label for="state of residence">Residence</label>
+        <select name="state-of-residence">
+            <option value="Abia">Abia</option>
+            <option value="Lagos">Lagos</option>
+        </select>
+        <label for="bio">Bio</label>
+        <textarea name="bio" class="input input-border-faint">Default text</textarea>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="Male"> 
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="Female"> 
+        <label for="Female">Female</label>   
+        <label for="profile image">Profile Image</label>
+        <input type="file" name="avatar" class="input input-border-faint">
+        <label for="password">Password</label>
+        <input type="password" name="password" required>
+        <input type="submit" value="Upload" class="input input-border-faint"> 
+    </form>  
+    <h2> What are you waiting for ? Join Ketu Developers Club today ! </h2>
+	<form action="/signup" method="post" enctype="multipart/form-data">
+	    <p>
+		    <label for="first name"> First Name </label>
+		    <input type="text" name="first-name" class="form-control" id="firstName" required>
+		</p>
+		<p>
+		    <label for="last name"> Last Name </label>
+		    <input type="text" name="last-name" autofocus required>
+		</p>
+		<p>
+		    <label for="email"> Email </label>
+		    <input type="email" name="email" value="adeleke.bright@aceafrica.net">
+		</p>
+		<p>
+		    <label for="mobile"> Mobile </label>
+		    <input type="tel" name="mobile" required>
+		</p>
+		<p>
+		   <label for="date of birth"> Date of birth</label>
+		    <input type="date" name="date-of-birth" required>
+		</p>
+		<p>
+		    <label for="password"> Password </label>
+		    <input type="password" name="password" required>
+		</p>
+		<p>
+		    <label for="state"> State </label>
+		    <select name="state-of-residence" multiple>
+		        <option value="Abia">Abia</option>
+			    <option value="Lagos">Lagos</option>
+			    <option value="Ogun">Ogun</option>
+			    <option value="Taraba">Taraba</option>
+		    </select>
+		</p>
+		<p>Gender
+		    <input type="radio" value="Male" name="gender" id="male">
+		    <label for="male">Male</label>
+		    <input type="radio" value="Female" name="gender" id="female">
+		    <label for="female">Female</label>
+		</p>
+		<p>Skills
+		    <input type="checkbox" value="Front end" name="skills" id="frontEnd">
+		    <label for="frontEnd">Front End</label>
+		    <input type="checkbox" value="Back end" name="skills" id="backEnd">
+		    <label for="backEnd">Back End</label>
+		    <input type="checkbox" value="cloud computing" name="skills" id="cloudComputing">
+		    <label for="cloudComputing">Cloud Computing</label>
+		</p>
+		<p>
+		    <label for="upload document">Upload document</label>
+		    <input type="file" name="document">
+		</p>
+		<p>
+		    <strong>Describe yourself</strong>
+		</p>
+		<textarea name="bio" rows="10" col="15"></textarea>
+		
+		<p><input type="submit" value="Apply"></p>
+	</form>
+</body> 
+</html>

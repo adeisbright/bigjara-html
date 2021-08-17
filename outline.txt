@@ -1,0 +1,101 @@
+course Outline on HTML5
+    1. Introduction to HTML5 
+    2. Elements , tags , and attributes 
+    3. Formatting your documents using paragraph 
+    4. Adding headings 
+    5. Creating links 
+    6. Inserting images (figure , figcaption , img)
+    7. Creating form 
+    8. Laying out items in list 
+    9. Using a table 
+    10. Inserting audio  and video 
+    11. Creating document segments (Nav , section , aside , article , header , footer , main , hgroup) 
+    12. Quotations with q and blockqoute (q , <blockquote cite="">)
+    13. Text formatting (em , i , strong , b , address , <abbr title="">) 
+    14. Web Graphics with SVG and Canvas 
+    15. Web API (Web storage , web workers , drag and drop  , history , geolocation , location , )
+Course Outline on Github 
+    1. Introduction 
+    2. Creating a repository 
+    3. Creating a branch  
+    4. Adding a pull request 
+    5. Cloning a repositor 
+    6. Pulling 
+    7. Pushing 
+    8. Fetching 
+    9. Hosting your site using github 
+    10. Collaborating with others using github 
+When faced with any challenge , run git help to see a list of commands and how to use those commands
+1.0 Download git from git-scm.org then install it , always run git from the command line as git 
+1.1 Now to initialize a repository  , run git init 
+1.1 Configure the repository by entering your name , email and any other preferences 
+git config user.name "Your name" , git config user.email "Your email" 
+1.2 To see the status of a repository , run git status 
+1.3 To make a commit  , run git commit -m "Your commit message " 
+1.4 To see all the history of your commits , run git log 
+1.5 We need to be able to make changes to file and also revert those changes 
+1.6 To clone a repository run git clone nameOfRepository nameToRemember .  This will also create remote
+branches for tracking the branches in the cloned repository meaning you can easily use your push , fetch , 
+and pull    
+For local repo within different folders , I used : 
+git clone ../repoName --local 
+1.7 To list the files in a directory use ls  , to see the content of a file use cat nameOfFile
+1.8 To unstage a file after using git add  , just use git restore nameOfFile --unstaged .  This will 
+remove the file from the staging environment .
+To remove a file from the file that is seen as being modified use git restore fileName 
+1.9 You can add more than one file from the working environment to the staging env by giving space  
+2.0 You can only remove a file or folder that is been tracked by git when you use git rm fileName.
+So , endeavor to track the files before trying to use your git rm fileName 
+2.2 Even after you clone a local repository , you will not be able to delete or do anything with it 
+until you delete it .
+2.3 To move or rename a file  , use git mv oldName newName  
+2.4 Showing the history of all commit is through the use of git log with several options can be used 
+along it . 
+2.5 git show will show the various objects within the repository 
+2.6 git branch will list , create , or show branches available within a repository 
+git branch --- list all branches 
+git branch branchName ---- creates a branch 
+git branch -d branchName --- deletes a branch 
+git branch -m oldName NewName --- renames a branch 
+git branch -r === list all remote branches  
+2.7 git log --oneline when it displays all the log , you can use the SHA-1 values for the commit to: 
+i. git checkout commitHash = Will move you to a detached head. You can carry out any experimental 
+changes here 
+ii. git revert commitHash will revert the changes that were changed by that particular commit .
+This will create a new history which is an inverse of the last history. This is suitable for 
+reverting changes while working on a public shared repositories 
+iii. I checkout to a commitHash thereby putting myself in a detached head , by the time I made a commit 
+within that detached head , my commit was orphaned and I lost the file because git garbage collector 
+destroyed the file . To avoid this scenario , you need to ensure you are on a branch.
+iv . git reset --hard commitHash will take the your file history to that particular timeline and remove 
+other history from the repository +
+v . You can amend your commit by using git commit --amend especially if you made your commit prematurely.
+This will enable you to add more changes you have made and your new file will have the newer changes 
+introduced into the system.
+Git reset should be used for undoing changes locally but the preferred option to use on shared public 
+repository should be git revert.
+
+2.8 git checkout is used for moving in and out of branches or for restoring files 
+2.9 git clean removes untracked files from the working tree 
+
+https://github.com/adebright/revision.git
+I created an organization on github and called it ACE AFRICA developers , it is private  , I sent 
+invites to my fellow developers , now , I need to start pushing and pulling of codes 
+edwinEDWIN1234567890ADE 
+git checkout fileorfoldername returns the file from the staging environment 
+back to the working environment 
+/******JAVASCRIPT OUTLINE *****
+1. Introduction and purpose for the language (History , wars  , and compatibility ) 
+2.The purpose of programming 
+3. Data Types 
+4. Unary operator (typeof) 
+5. Bindings and storage (In-memory , file , database) -- Using var , let , const 
+6. Global (alert , prompt , confirm) 
+1092786133:AAGlnYntMzlwNQya84d2jTjBxUiJYVz3G5c - My token for adegiin telegram bot
+t.me/adegiiinbot
+How to set a webhook
+https://api.telegram.org/bot1092786133:AAGlnYntMzlwNQya84d2jTjBxUiJYVz3G5c/setWebhook?url=https://adegiin.herokuapp.com/
+How to get info about a webhook 
+https://api.telegram.org/bot1092786133:AAGlnYntMzlwNQya84d2jTjBxUiJYVz3G5c/getWebhookInfo 
+How to delete a webhook 
+https://api.telegram.org/bot1092786133:AAGlnYntMzlwNQya84d2jTjBxUiJYVz3G5c/deleteWebhook
